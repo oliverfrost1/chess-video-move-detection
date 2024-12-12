@@ -1,0 +1,4 @@
+inputs/*
+!inputs/2_move_student.mp4
+result.csv
+__pycache__

@@ -1,6 +1,6 @@
 ultralytics==8.3.31
 opencv-python==4.10.0.84
-numpy==2.2.0
+numpy
 matplotlib==3.9.3
 shapely==2.0.6
 pandas==2.2.3
