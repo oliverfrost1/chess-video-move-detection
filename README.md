@@ -93,6 +93,7 @@ Remember to input your inputs in `config.py`, otherwise the correct inputs will 
 ## Showcase
 
 **1. Detected Chessboard Area**
+
 Below an example of the chessboard corners being detect can be seen.
 
 <div align="center">
@@ -104,6 +105,7 @@ Below an example of the chessboard corners being detect can be seen.
 
 
 **2. Detected Pieces with Assigned Tiles**
+
 Below an example of a full board along with all labels can be seen. 
 - The green dot is the detected center of the chess pieces and the red dot is the angle and height adjusted midpoint of the piece. The square that the red dot is on is the one where the pieces location will be registered.
 - The small blue dots are the board square centers. These are calculated from the polygon of the board.
