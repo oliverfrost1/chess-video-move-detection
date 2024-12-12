@@ -1,20 +1,12 @@
 # Chess Move Extraction from Videos Using Deep Learning
 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/5e4a5970-6017-47c4-b3a5-bc41209ff9c8" 
+         alt="Chess board with inference annotations on it" 
+         width="500" />
+</div>
+
 This project focuses on automating the transcription of chess piece movements from a video feed. By leveraging image processing, deep learning, and machine learning techniques, it identifies the chessboard, detects individual pieces, and records the sequence of moves in standard chess notation.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [How It Works](#how-it-works)
-- [Models](#models)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Showcase](#showcase)
-- [Project Structure](#project-structure)
-- [Configuration](#configuration)
-- [Notes and Limitations](#notes-and-limitations)
-- [License](#license)
 
 ## Overview
 
@@ -94,21 +86,36 @@ Remember to input your inputs in `config.py`, otherwise the correct inputs will 
    sample_input_video2.mp4,1. g3 Qh4 2. h4 Ng5
    ```
 
-   If you need strict PGN formating, I would suggest you change the code yourself. When using strict PGN formatting, it can cause problems if illegal moves are made or if illegal moves are registered.
+  **Note:** The three dots after the first "1" is due to black starting in the video. 
+  
+   If you need strict PGN formating, I would suggest you change the code yourself. When using strict PGN formatting, it can cause problems if illegal moves are made or if illegal moves are registered. 
 
 ## Showcase
 
 **1. Detected Chessboard Area**
 Below an example of the chessboard corners being detect can be seen.
-![width_521](https://github.com/user-attachments/assets/03d5aa92-9555-46b0-a98c-2b95ae0d9567)
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/03d5aa92-9555-46b0-a98c-2b95ae0d9567" 
+         alt="Chess board with inference annotations on it" 
+         width="500" />
+</div>
+
 
 
 **2. Detected Pieces with Assigned Tiles**
 Below an example of a full board along with all labels can be seen. 
 - The green dot is the detected center of the chess pieces and the red dot is the angle and height adjusted midpoint of the piece. The square that the red dot is on is the one where the pieces location will be registered.
 - The small blue dots are the board square centers. These are calculated from the polygon of the board.
-- The big blue dot is the middle of a square with a piece detected on it. 
-![width_614](https://github.com/user-attachments/assets/54c0a891-4551-483e-a0bd-bf178e0f031d)
+- The big blue dot is the middle of a square with a piece detected on it.
+  
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/5e4a5970-6017-47c4-b3a5-bc41209ff9c8" 
+         alt="Chess board with inference annotations on it" 
+         width="500" />
+</div>
+
+
 
 
 ## Project Structure
