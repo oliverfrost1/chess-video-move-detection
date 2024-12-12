@@ -98,11 +98,18 @@ Remember to input your inputs in `config.py`, otherwise the correct inputs will 
 
 ## Showcase
 
-**1. Detected Chessboard Corners**
+**1. Detected Chessboard Area**
+Below an example of the chessboard corners being detect can be seen.
+![width_521](https://github.com/user-attachments/assets/03d5aa92-9555-46b0-a98c-2b95ae0d9567)
+
 
 **2. Detected Pieces with Assigned Tiles**
+Below an example of a full board along with all labels can be seen. 
+- The green dot is the detected center of the chess pieces and the red dot is the angle and height adjusted midpoint of the piece. The square that the red dot is on is the one where the pieces location will be registered.
+- The small blue dots are the board square centers. These are calculated from the polygon of the board.
+- The big blue dot is the middle of a square with a piece detected on it. 
+![width_614](https://github.com/user-attachments/assets/54c0a891-4551-483e-a0bd-bf178e0f031d)
 
-**3. Move Extraction in Action**
 
 ## Project Structure
 
